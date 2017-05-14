@@ -20,13 +20,16 @@ chrome.browserAction.onClicked.addListener(function (tab) {
     copyID();
 });
 
+chrome.contextMenus.onClicked.addListener(function (tab) {
+    copyID();
+});
+
 var context = "page";
 var title = "Copy Session ID";
 var id = chrome.contextMenus.create({
     "id": "poe_sess_id_finder_1",
     "documentUrlPatterns": ["*://*.pathofexile.com/*"],
     "title": title,
-    "contexts": [context],
-    "onclick": copyID
+    "contexts": [context]
 });
 
