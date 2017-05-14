@@ -3,7 +3,7 @@
   "name": "Path of Exile Session ID finder",
   "author": "Duiker101",
   "description": "Find your own session ID quickly via browser button or context menu.",
-  "version": "1.0",
+  "version": "0.0.1",
   "icons": {
     "128": "icon.png"
   },
