@@ -1,21 +1,25 @@
- {
+{
   "manifest_version": 2,
   "name": "Path of Exile Session ID finder",
-  "author":"Duiker101",
-  "default_locale": "en",
+  "author": "Duiker101",
   "description": "Find your own session ID quickly via browser button or context menu.",
   "version": "1.0",
-  "icons": { "128": "icon.png" },
+  "icons": {
+    "128": "icon.png"
+  },
   "background": {
     "persistent": false,
-    "scripts": ["jquery-3.2.1.min.js","background.js"]
+    "scripts": [
+      "jquery-3.2.1.min.js",
+      "background.js"
+    ]
   },
-    "browser_action": {
+  "browser_action": {
     "default_icon": "icon.png"
   },
   "permissions": [
-          "cookies",
-          "contextMenus",
-          "*://*.pathofexile.com/"
-        ]
+    "cookies",
+    "contextMenus",
+    "*://*.pathofexile.com/"
+  ]
 }
